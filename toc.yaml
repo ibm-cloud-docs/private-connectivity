@@ -1,0 +1,69 @@
+toc:
+  properties:
+    subcollection: private-connectivity
+    authors:
+        - name: Bryan Buckland
+          url: https://www.linkedin.com/in/bryan-buckland/
+        - name: David Durazzano
+          url: https://www.linkedin.com/in/david-d-2244902/
+        - name: Nick Woodyard
+          url: https://www.linkedin.com/in/nick-woodyard-019967/
+        - name: Ying Tang
+          url: https://www.linkedin.com/in/ying-tang-3a2b2199/
+        - name: Dan Waugh
+          url: https://www.linkedin.com/in/danwaugh/
+    industry: SoftwareAndPlatformApplications, Airlines, Healthcare, Financial services, Insurance
+    use-case: ApplicationIntegration
+    compliance: ISOIEC27701, GDPR, SOC3, PCIDSS, IBMCloudFFS
+    audience: solution
+    category: solution_docs
+    content-type: white-paper
+    href: /docs/private-connectivity
+    path: private-connectivity
+    description: Evaluate and choose the right IBM Cloud private connectivity offering for your needs.
+    label: IBM Cloud private connectivity options
+
+  entries:
+    - navgroup:
+       id: overview
+       topics:
+       - introduction.md
+    - navgroup:
+       id: plan
+       topics:
+       - topicgroup:
+           label: Deployment considerations
+           topics:
+           - dedicated-worksheet.md
+           - connect-worksheet.md
+           - tgw-worksheet.md
+           - vpn-s2s-worksheet.md
+           - vpn-c2s-worksheet.md
+           - satellite-worksheet.md
+       - topicgroup:
+           label: Use cases
+           topics:
+           - dedicated-use-cases.md
+           - connect-use-cases.md
+           - tgw-use-cases.md
+           - vpn-s2s-use-cases.md
+           - vpn-c2s-use-cases.md
+           - satellite-use-cases.md
+       - topicgroup:
+           label: Provisioning walk-throughs
+           topics:
+           - dedicated.md
+           - connect.md
+           - tgw.md
+           - vpn-s2s.md
+           - vpn-c2s.md
+           - satellite.md
+    - navgroup:
+       id: reference
+       topics:
+       - direct-link-dedicated.md
+       - direct-link-connect.md
+       - transit-gateway-reference.md
+       - vpn-site-to-site.md
+       - vpn-client-to-site.md
+       - satellite-connector.md
