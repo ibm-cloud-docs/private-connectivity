@@ -94,4 +94,4 @@ IBM Cloud Monitoring collects basic VPN metrics on IBM Cloud for VPC, such as VP
 
 For more information, refer to [Monitoring VPN gateway for VPC metrics](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui).
 
-Related link: [VPN gateway events](/docs/vpc?topic=vpc-at-events#events-vpns)
+Related link: [VPN gateway events](/docs/vpc?topic=vpc-at_events#events-vpns)
