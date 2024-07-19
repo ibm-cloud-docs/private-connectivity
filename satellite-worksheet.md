@@ -20,7 +20,7 @@ subcollection: private-connectivity
 Here are some deployment considerations to review when choosing Satellite Connector.
 {: shortdesc}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:-----|
 | Do you need lightweight, secure tunnel or gateway from IBM Cloud back to your on-premises environment? If this describes your use case, see [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors). | |
 | Still not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-connector-and-secure-gateway#capability-comparison). ||

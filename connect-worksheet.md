@@ -20,7 +20,7 @@ subcollection: private-connectivity
 Here are some deployment considerations to review when choosing Direct Link Connect.
 {: shortdesc}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 | Set up a second, diverse direct link to prevent outages? [Learn more](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link) |  |
 | Contact your service provider to determine the location to IBM Cloud by verifying your colocation or provider's capabilities to reach the Meet Me Room (MMR) and cross-connect into IBM Cloud. Also, make sure that you understand your provider's deployment process.|  |
