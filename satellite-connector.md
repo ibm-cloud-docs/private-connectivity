@@ -17,7 +17,7 @@ subcollection: private-connectivity
 # Satellite Connector
 {: #reference-satellite-connector}
 
-This topic provides additional information on the Satellite Connector offering.
+Provides additional information on the Satellite Connector offering.
 {: shortdesc}
 
 Satellite Connector provides a lightweight solution for IBM Cloud services to reach out to on-premises data sources. If bidirectional communication is needed, or Cloud services to be deployed on the client on-premises, refer to [Understanding Satellite location and hosts](/docs/satellite?topic=satellite-location-host).
@@ -29,32 +29,32 @@ To calculate pricing for IBM Cloud offerings, use the [IBM Cloud cost estimator]
 {: tip}
 
 * Low cost, [pay-as-you-go](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external} pricing with a single flat rate charge without bandwidth caps.
-* Flat rate per on-premise instance; Satellite locations and connections are priced at the same rate with no additional charges.
-* Client is responsible for on-premise compute/storage/network components and internet connection back to the IBM Cloud MZR.
+* Flat rate per on-premises instance. Satellite locations and connections are priced at the same rate with no additional charges.
+* The client is responsible for on-premises compute/storage/network components and internet connection back to the IBM Cloud MZR.
 
 ## Connectivity
 {: #reference-connectivity-satellite}
 
-* Establishes secure TLS 1.3 endpoint communications over the internet or Direct Link. This means that whatever data is transfered, the client maintains control over it at all times.
-* Communications originate outound from within the client's network for simplified client networking.
+* Establishes secure TLS 1.3 endpoint communications over the internet or Direct Link. The client always maintains control over whatever data is transferred.
+* Communications originate outbound from within the client's network for simplified client networking.
 * Unique DNS names for each instance enable tight firewall controls.
-* Client configured unique endpoints for each data transfer at layer 7 of the stack; as opposed to linking L2/L3 networks similar to a VPN.
+* The client configured unique endpoints for each data transfer at layer 7 of the stack, as opposed to linking L2/L3 networks similar to a VPN.
 
 ## Latency and bandwidth
 {: #reference-latency-bandwidth-satellite}
 
-*  Fully dependent on the client's underlying internet or Direct Link transport, and is impacted by any bandwidth limitations or latency they may introduce.
+*  Fully dependent on the client's underlying internet or Direct Link transport, and is impacted by any bandwidth limitations or latency they might introduce.
 * Connection is made to one of IBM's MZRs. Clients are encouraged to pick the MZR closet to them in terms of network performance.
-* For a satellite location, there are maximum latency requirements between the on-premises hosts. The maximum host-to-host communication at the satellite location is _x_ ms.
+* Maximum latency requirements exist between the on-premises hosts for a satellite location. The maximum host-to-host communication at the satellite location is _x_ ms.
 
 ## Provisioning
 {: #reference-provisioning-satellite}
 
-* Ordered and configured through IBM Cloud UI, CLI or API.
+* Ordered and configured through IBM Cloud UI, CLI, or API.
 * Satellite Locations support an on-premises service control plan that operates all local services, and establishes management connectivity with IBM Cloud. This requires three hosts for the HA control plane, plus an additional host to support local management services.
-* Satellite connectors support cloud endpoints that enable communication to the client premises. These require a client supported docker host (x86), and can also be deployed in redundant and HA configurations.
+* Satellite connectors support cloud endpoints that enable communication to the client premises. These require a client-supported docker host (x86), and can also be deployed in redundant and HA configurations.
 
-For deployment options including redundant and HA patterns, see [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors).
+For deployment options, including redundant and HA patterns, see the [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors).
 {: note}
 
 Related links:
@@ -67,9 +67,9 @@ Related links:
 {: #reference-security-data-encryption-satellite}
 
 * Uses TLS 1.3 encryption for all communications, with managed key rotation implemented through an IBM Site Recovery Engineer.
-* Client has control on communication at all times, and has the ability to indivually disable/enable any set of end-ponts on demand.
-* Client can specify their own encryption for individual endpoints they create, if desired.
-* Fully supports IAM roles and responsiblity assignment to control access and data exposure risk.
+* The client always has control on communication and is able to individually disable and enable any set of endpoints on demand.
+* Client can specify their own encryption for individual endpoints they create, if wanted.
+* Fully supports IAM roles and responsibility assignment to control access and data exposure risk.
 
 Related links:
 * [Access management](/docs/satellite?topic=satellite-iam)
@@ -81,9 +81,9 @@ Related links:
 ## Resiliency
 {: #reference-resiliency-satellite}
 
-* Satellite Locations and Satellite Connectors both support High Availablity (HA) deployments across multiple client avilability zones.
-* The client premise deployment is the responsibility of the client to deploy across hosts that are logically and physically independent to give the greatest failure resiliency.
-* For resiliency the IBM Cloud infrastructure is deployed across three independent zone, each zone is a separate data center with independent power, cooling, and networking for maximum reliability.
+* Satellite Locations and Satellite Connectors both support High Availability (HA) deployments across multiple client availability zones.
+* The client premise deployment is the responsibility of the client to deploy across hosts that are logically and physically independent of give the greatest failure resiliency.
+* For resiliency the IBM Cloud infrastructure is deployed across three independent zones, each zone is a separate data center with independent power, cooling, and networking for maximum reliability.
 
 Related links:
 * [Architecture](/docs/satellite?topic=satellite-service-architecture)
@@ -92,9 +92,9 @@ Related links:
 ## Monitoring and logging
 {: #reference-monitoring-logging-satellite}
 
-IBM Satellite connectivity use a combination of IBM Log Analysis and IBM Cloud Monitoring for log analysis and metrics monitoring.
+IBM Satellite connectivity uses a combination of IBM Log Analysis and IBM Cloud Monitoring for log analysis and metrics monitoring.
 
-* All operations work through the client's IBM Cloud account, and can be accomplished via UI, CLI or API as appropriate.
+* All operations work through the client's IBM Cloud account, and can be accomplished through the UI, CLI, or API.
 * Solution management is provided by an IBM Cloud Site Reliability Engineer. The client is responsible for their on-premises compute, network, and storage management.
 
 ### Satellite log analysis
@@ -105,7 +105,7 @@ You can use IBM Log Analysis to view application and connection logs for satelli
 ### Satellite metrics monitoring
 {: #satellite-metrics}
 
-IBM Cloud Satellite® comes with basic tools to help you manage the health of your Satellite resources, such as reviewing location and host health. Additionally, you can integrate Satellite and other IBM Cloud resources with IBM Cloud Monitoring to get a comprehensive view and tools to manage all your resources. 
+IBM Cloud Satellite® comes with basic tools to help you manage the health of your Satellite resources, such as reviewing location and host health. Also, you can integrate Satellite and other IBM Cloud resources with IBM Cloud Monitoring to get a comprehensive view and tools to manage all your resources. 
 
 Related links:
 * [Monitoring for Satellite](/docs/satellite?topic=satellite-monitor)
