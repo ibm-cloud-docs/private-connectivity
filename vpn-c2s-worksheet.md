@@ -20,7 +20,7 @@ subcollection: private-connectivity
 Here are some deployment considerations to review when choosing Client VPN for VPC.
 {: shortdesc}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 |Do you need your individual users to have private and secure access (client-to-site servers) to your VPC resources from anywhere (for example, the airport, a hotel, or from home)? If yes, where are these users located?|  |
 |Do you need your individual users to access service endpoints through your client-to-site VPN? These endpoints securely connect to IBM Cloud services over the IBM Cloud private network.|  |
@@ -33,7 +33,7 @@ Here are some deployment considerations to review when choosing Client VPN for V
 ## Performance and other things
 {: #performance-c2s}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 |If you need individual access to VPC (client-to-site connectivity) from remote, how many users can be connecting to VPC concurrently through VPN?|  |
 |What is your expected cost for the connectivity option?  \n  \n Client-to-site VPN uses usage-based pricing that can be estimated using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.  \n  \n Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.|  |

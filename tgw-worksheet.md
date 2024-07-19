@@ -20,7 +20,7 @@ Here are some deployment considerations to review when choosing Transit Gateway.
 # Transit Gateway deployment considerations
 {: #tgw-deployment-considerations}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 | Have you decided which Transit Gateway location to use? | |
 | Do you want to use local or global routing? Your choice is dependent on where the networks to be connected are located. [Learn more](/docs/transit-gateway?topic=transit-gateway-helpful-tips&interface=ui#routing-considerations)  | |

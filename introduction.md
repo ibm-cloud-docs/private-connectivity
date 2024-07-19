@@ -147,7 +147,7 @@ There are many factors to consider regarding pricing, such as peer configuration
 To calculate pricing for IBM Cloud offerings, use the [IBM Cloud cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
 {: important}
 
-| IBM Cloud service | High  \n cost | Medium  \n cost | Low  \n cost |
+| IBM Cloud service | High cost | Medium cost | Low cost |
 |---------------|-------------|-------------|-------------|
 | Direct Link Dedicated  | ![Checkmark icon](../icons/checkmark-icon.svg) | |
 | Direct Link Connect  |  | ![Checkmark icon](../icons/checkmark-icon.svg) |
@@ -196,7 +196,7 @@ Provisioning time includes completing names and configuration parameters, as wel
 ### Security and data encryption
 {: #security-data-encryption-comparison}
 
-All solutions listed are private and secure. For more information, see the "Security and data encryptions" in the Reference section for each service.
+All solutions listed are private and secure. For more information, see Security and data encryptions in the Reference section for each service.
 
 ### Resiliency
 {: #resiliency-comparison}

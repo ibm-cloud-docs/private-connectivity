@@ -20,7 +20,7 @@ subcollection: private-connectivity
 Here are some deployment considerations to review when choosing VPN for VPC.
 {: shortdesc}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 |Which IBM Cloud region do you plan to deploy the VPCs? The regions could be closest to your on-premises site.| |
 |What subnets in the VPC need to be connected through the VPN? Make sure that there's enough space in the subnet for the gateway.| |
@@ -36,7 +36,7 @@ Here are some deployment considerations to review when choosing VPN for VPC.
 ## Performance and other things
 {: #performance-c2s-vpn}
 
-|   |   |
+| Deployment consideration | Action |
 |:----|:--------|
 |What is the desired throughput of the site-to-site connectivity option (i.e., Direct Link or VPN)? Is there a peak hour, month, or season?  \n Site-to-site VPN supports up to [650 Mbps of throughput](/docs/vpc?topic=vpc-faqs-vpn). Direct Link supports much higher bandwidth up to 5 Gbps or 10 Gbps depending on your configurations. | |
 |What is your expected cost for the connectivity option?  \n Site-to-site VPN uses a usage-based pricing that can be estimated using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}. Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated] (/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.
