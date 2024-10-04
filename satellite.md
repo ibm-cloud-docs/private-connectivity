@@ -17,9 +17,7 @@ subcollection: private-connectivity
 # Satellite Connector provisioning walk-through
 {: #provisioning-scenario-satellite}
 
-## Setting up a Satellite Connector
-{: #sat-connector}
-
 Satellite Connector provides secure TLS tunneling from IBM Cloud applications and services to your on-premises applications.
+
 - [Connector overview](/docs/satellite?topic=satellite-understand-connectors)
 - [Connector end-to-end example](/docs/satellite?topic=satellite-end-to-end)

@@ -27,3 +27,4 @@ Here are some deployment considerations to review when choosing Satellite Connec
 | Do you need to initiate communications from your on-premises to IBM Cloud? In this case, a Satellite Location is required instead of a Satellite Connector. ||
 | Do you need to route networks between your on-premises and IBM Cloud? If so, consider a VPN or Direct Link connection. ||
 | Do you also need to run IBM Cloud services like Red Hat OpenShift on your own infrastructure, another cloud provider infrastructure, or on the edge? If this describes your use case, see [Understanding Satellite locations and hosts](/docs/satellite?topic=satellite-location-host). ||
+{: caption="Satellite Connector deployment considerations" caption-side="bottom"}
