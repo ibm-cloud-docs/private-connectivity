@@ -31,6 +31,6 @@ To access the resources in `VPC1`, in your routing table set **Accept routes fro
 
 To access resources in the `POWER VM`, in your routing table, create a VPN server route with the POWER network as the destination using the **Translate** action. This translates the source IP to the VPN server's private IP, making your VPN client IP invisible to the destination in the POWER network.
 
-![Client-to-site VPN use case](/images/vpn-client-to-site.png "Client-to-site VPN use case"){: caption="Figure 1. Client-to-site VPN use case" caption-side="bottom"}
+![Client-to-site VPN use case](/images/vpn-client-to-site.png "Client-to-site VPN use case"){: caption="Client-to-site VPN use case" caption-side="bottom"}
 
 Related link: [VPN server use cases](/docs/vpc?topic=vpc-vpn-client-to-site-overview#vpn-client-to-site-use-cases)
