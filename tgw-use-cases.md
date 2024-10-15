@@ -30,7 +30,7 @@ In this deployment topology, a connection through IBM Cloud Transit Gateway is u
 
 The following network architecture allows connectivity between multiple {{site.data.keyword.powerSys_notm}} locations with high availability (HA) and disaster recovery (DR) solutions.
 
-![Transit Gateway deployment scenario](/images/network-tgw.svg "Transit Gateway use case"){: caption="Figure 1. Transit Gateway use case" caption-side="bottom"}
+![Transit Gateway deployment scenario](/images/network-tgw.svg "Transit Gateway use case"){: caption="Transit Gateway use case" caption-side="bottom"}
 
 Key features are as follows:
 

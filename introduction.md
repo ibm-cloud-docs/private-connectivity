@@ -28,7 +28,7 @@ Connecting to IBM Cloud with a private connection can be achieved with the follo
 Private connectivity resources within IBM Cloud can be achieved with Transit Gateway (private backbone).
 {: note}
 
-![IBM Cloud Overview](/images/cloud-private-conn.svg "IBM Cloud Private Connectivity Overview"){: caption="Figure 1. IBM Cloud Private Connectivity Overview" caption-side="bottom"}
+![IBM Cloud Overview](/images/cloud-private-conn.svg "IBM Cloud Private Connectivity Overview"){: caption="IBM Cloud Private Connectivity Overview" caption-side="bottom"}
 
 ## Required skills for system administrators
 {: #required-skills}

@@ -28,6 +28,6 @@ Primary use cases include administrative remote access to various hosts across t
 
 Traffic that matches negotiated CIDR ranges passes through a policy-based VPN. You can use policy-based VPN gateways and ingress routing to forward POWER incoming traffic from transit gateways to your on-premises network. VPC 1 adds an on-premises CIDR as the VPC address prefix to allow route propagation.
 
-![Site-to-site VPN use case](/images/VPN-s2s-usecase.png "Site-to-site VPN use case"){: caption="Figure 1. Site-to-site VPN use case" caption-side="bottom"}
+![Site-to-site VPN use case](/images/VPN-s2s-usecase.png "Site-to-site VPN use case"){: caption="Site-to-site VPN use case" caption-side="bottom"}
 
 Related link: [VPN for VPC use cases](/docs/vpc?topic=vpc-using-vpn#vpn-use-cases)
