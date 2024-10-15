@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "title": "Private connectivity white paper",
+  "introduction": "This white paper includes deployment considerations, use cases, and provisioning walk-throughs to help you evaluate and choose the right IBM Cloud private connectivity offering for your needs.",
+  "section_topics": {
+    "links": [
+      {
+        "title": "IBM Cloud private connectivity offerings",
+        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud"
+      },
+      {
+        "title": "Offering comparisons",
+        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud#comparison-table"
+      },
+      {
+        "title": "IBM Cloud offering descriptions and key differentiators",
+        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud#offerings-key-points"
+      }
+    ]
+  }
+}
