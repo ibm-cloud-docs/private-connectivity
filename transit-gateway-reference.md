@@ -82,7 +82,10 @@ IBM Cloud Transit Gateway is highly available within any IBM Cloud location (for
 
 You are responsible for understanding your configuration, customization, and usage of the service. You are also responsible for being ready to re-create an instance of the service in a new location and restore your data in a new location.
 
-Related link: [High Availability](/docs/transit-gateway?topic=transit-gateway-ha-dr)
+Related links:
+
+* [High Availability](/docs/transit-gateway?topic=transit-gateway-ha)
+* [Business continuity and disaster recovery](/docs/transit-gateway?topic=transit-gateway-bc-dr)
 
 ## Monitoring and logging
 {: #reference-monitoring-logging-transit-gateway}
