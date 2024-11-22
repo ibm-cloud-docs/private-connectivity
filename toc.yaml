@@ -8,8 +8,6 @@ toc:
           url: https://www.linkedin.com/in/david-d-2244902/
         - name: Nick Woodyard
           url: https://www.linkedin.com/in/nick-woodyard-019967/
-        - name: Ying Tang
-          url: https://www.linkedin.com/in/ying-tang-3a2b2199/
         - name: Dan Waugh
           url: https://www.linkedin.com/in/danwaugh/
     industry: SoftwareAndPlatformApplications, Airlines, Healthcare, Financial services, Insurance
@@ -22,7 +20,6 @@ toc:
     path: private-connectivity
     description: Evaluate and choose the right IBM Cloud private connectivity offering for your needs.
     label: IBM Cloud private connectivity options
-
   entries:
     - navgroup:
        id: overview
