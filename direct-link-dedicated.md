@@ -81,7 +81,8 @@ Related links:
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
 * [Models for diversity and redundancy](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link)
-* [High availability and disaster recovery](/docs/dl?topic=dl-ha-dr)
+* [High availability](//docs/dl?topic=dl-ha)
+* [Business continuity and disaster recovery](/docs/dl?topic=dl-bc-dr)
 
 ## Monitoring and logging
 {: #reference-monitoring-logging-dedicated}
