@@ -155,7 +155,7 @@ To calculate pricing for IBM Cloud offerings, use the [IBM Cloud cost estimator]
 | VPN (site-to-site) | | |  ![Checkmark icon](../icons/checkmark-icon.svg) |
 | VPN (client-to-site) | | | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | Satellite Connector | | | ![Checkmark icon](../icons/checkmark-icon.svg) |
-{: caption="Table 1: Pricing comparison" caption-side="bottom"}
+{: caption="Pricing comparison" caption-side="bottom"}
 
 ### Connectivity
 {: #connectivity-comparison}
@@ -216,4 +216,4 @@ Private connectivity options use a variety of tools for monitoring and logging.
 | VPN (site-to-site) | [IBM Cloud Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs&interface=ui) |
 | VPN (client-to-site) | [IBM Cloud Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-client-vpn-log-analysis-c2s&interface=ui) |
 | Satellite Connector | [IBM Cloud Monitoring](/docs/satellite?topic=satellite-monitor) | [Activity Tracker](/docs/satellite?topic=satellite-at_events)  \n  \n [IBM Log Analysis](/docs/satellite?topic=satellite-health) |
-{: caption="Table 1: Monitoring and logging comparison" caption-side="bottom"}
+{: caption="Monitoring and logging comparison" caption-side="bottom"}
