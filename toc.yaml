@@ -2,22 +2,22 @@ toc:
   properties:
     subcollection: private-connectivity
     authors:
-        - name: Bryan Buckland
-          title: STSM, IBM Cloud IaaS Solution Architecture
-          url: https://www.linkedin.com/in/bryan-buckland/
-          image: images/Bryan-buckland.jpg
-        - name: David Durazzano
-          title: Product Manager, IBM Cloud Network
-          url: https://www.linkedin.com/in/david-d-2244902/
-          image: images/Dave-durazzano.jpg
-        - name: Nick Woodyard
-          title: Product Manager, IBM Cloud Direct Link
-          url: https://www.linkedin.com/in/nick-woodyard-019967/
-          image: images/Nick-woodyard.jpg
-        - name: Dan Waugh
-          title: Principle Product Manager, Managed AI Solutions / InstructLab aaS
-          url: https://www.linkedin.com/in/danwaugh/
-          image: images/Dan-waugh.jpg
+    - name: Bryan Buckland
+      title: STSM, IBM Cloud IaaS Solution Architecture
+      url: https://www.linkedin.com/in/bryan-buckland/
+      image: images/Bryan-buckland.jpg
+    - name: David Durazzano
+      title: Product Manager, IBM Cloud Network
+      url: https://www.linkedin.com/in/david-d-2244902/
+      image: images/Dave-durazzano.jpg
+    - name: Nick Woodyard
+      title: Product Manager, IBM Cloud Direct Link
+      url: https://www.linkedin.com/in/nick-woodyard-019967/
+      image: images/Nick-woodyard.jpg
+    - name: Dan Waugh
+      title: Principle Product Manager, Managed AI Solutions / InstructLab aaS
+      url: https://www.linkedin.com/in/danwaugh/
+      image: images/Dan-waugh.jpg
     industry: SoftwareAndPlatformApplications, Airlines, Healthcare, Financial services, Insurance
     use-case: ApplicationIntegration
     compliance: ISOIEC27701, GDPR, SOC3, PCIDSS, IBMCloudFFS
@@ -30,7 +30,7 @@ toc:
     description: Evaluate and choose the right IBM Cloud private connectivity offering for your needs.
     label: IBM Cloud private connectivity options
   entries:
-    - navgroup:
-       id: overview
-       topics:
-       - white-paper.md
+  - navgroup:
+      id: overview
+      topics:
+      - white-paper.md
