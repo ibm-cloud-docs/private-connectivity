@@ -6,15 +6,15 @@
     "links": [
       {
         "title": "IBM Cloud private connectivity offerings",
-        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud"
+        "href": "/docs/private-connectivity?topic=private-connectivity-white-paper"
       },
       {
         "title": "Offering comparisons",
-        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud#comparison-table"
+        "href": "/docs/private-connectivity?topic=private-connectivity-white-paper#comparison-table"
       },
       {
         "title": "IBM Cloud offering descriptions and key differentiators",
-        "href": "/docs/private-connectivity?topic=private-connectivity-connect-privately-ibm-cloud#offerings-key-points"
+        "href": "/docs/private-connectivity?topic=private-connectivity-white-paper#offerings-key-points"
       }
     ]
   }

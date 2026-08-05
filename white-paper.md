@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-04-14"
+  years: 2023, 2026
+lastupdated: "2026-08-05"
 
 keywords: private connectivity options
 
@@ -237,7 +237,7 @@ Here are some deployment considerations to review when choosing Direct Link Dedi
 |:----|:--------|
 | Set up a second, diverse direct link to prevent outages. [Learn more](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link) |  |
 | Review Direct Link Dedicated [prerequisites](/docs/dl?topic=dl-ibm-cloud-dl-prerequisites). | |
-| Consider whether you want a metered or unmetered pricing plan. Metered has a lower port fee and charges a per GB usage free for egress traffic across the direct link. Unmetered billing has a higher port fee and no usage charges, which is ideal for customers who have higher egress traffic across their direct link. | |
+| Consider whether you want a metered or unmetered pricing plan. Metered has a lower port fee and charges a per GB usage fee for egress traffic across the direct link. Unmetered billing has a higher port fee and no usage charges, which is ideal for customers who have higher egress traffic across their direct link. | |
 | Review Direct Link Dedicated [planning considerations](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-dedicated#before-you-begin-dedicated) and [planning for virtual connections](/docs/dl?topic=dl-dl-planning-considerations#dl-planning-virtual-connections). | |
 | Review Direct Link Dedicated [known limitations](/docs/dl?topic=dl-known-limitations). |   |
 | Decide what type of network connection that you want to bind to your direct link. For example, you can create a direct, private connection between your on-premises network and {{site.data.keyword.cloud_notm}}, or bind your direct link to transit gateways. Your on-premises network can then access {{site.data.keyword.cloud_notm}} resources that are connected through the transit gateways. [Learn more](/docs/transit-gateway?topic=transit-gateway-about) | |
@@ -290,7 +290,7 @@ Here are some deployment considerations to review when choosing a VPN for VPC.
 |How are your virtual server instances distributed in the VPC? VPN gateway is created in the zone that is associated with the subnet that you select and can be used to connect to virtual servers in the same zone. For zone fault tolerance, you can deploy one VPN gateway per zone.| |
 |Do you need your on-premises network to access service endpoints through your site-to-site connectivity option?  \n Do you have resources in {{site.data.keyword.cloud_notm}} on Classic that you need to access through VPN or another connectivity option?|  |
 |Do you have a peer VPN gateway or router (or multiple gateways/routers) setup on-premises? If yes, what is the type or model of that gateway? If your peer gateway enforces Perfect Forward Secrecy (PFS), you need to set custom policies.|  |
-|What will be the CIDRs on-premises? Note that local (VPC) and peer (on-premises) subnets of a VPN gateway connection should not overlap or conflict.  /\n The local (VPC) subnet is specified when you create the VPN Gateway. For more information, see working with [Working with subnets in VPC](/docs/vpc?topic=vpc-subnets-configure).| |
+|What will be the CIDRs on-premises? Note that local (VPC) and peer (on-premises) subnets of a VPN gateway connection should not overlap or conflict.  \n The local (VPC) subnet is specified when you create the VPN Gateway. For more information, see working with [Working with subnets in VPC](/docs/vpc?topic=vpc-subnets-configure).| |
 |Is your VPN gateway on-premises behind a firewall doing Network Address Translation (NAT)?|  |
 |Do you need the VPC resources to access the internet through VPN? Do you want any IP range to be blocked? |  |
 {: caption="Part 1: Site-to-site VPN deployment considerations" caption-side="bottom"}
@@ -477,9 +477,9 @@ Direct Link Dedicated requires that you install an edge router (CER) to physical
 
 You are issued a letter of authorization (LOA) that allows you and your service provider to work with the {{site.data.keyword.cloud_notm}} site manager to install the CER. The site manager then provides a completion notice indicating that the install happened. This completion notice is approved by the IBM Implementation team for accuracy. After which, the team will ensure IBM side Layer-1 connectivity.
 
-After there is compete Layer-1 connectivity (customer and IBM side), and the direct link is configured on the XCR and cross-connect switch (XCS), the provisioning process is complete. The direct link is now able to establish the boarder gateway protocol (BGP) session between the CER and XCR.
+After there is complete Layer-1 connectivity (customer and IBM side), and the direct link is configured on the XCR and cross-connect switch (XCS), the provisioning process is complete. The direct link is now able to establish the border gateway protocol (BGP) session between the CER and XCR.
 
-You must have your Direct Link planned and built out before ordering a dedicated direct link to prevent delays. The Dedicated Direct Link physical demarcation is a Patch page Port. It is up to the client to build to the Patch page Port. If this is the first Direct Link order or is a new order into a new region, please allow yourself plenty of time. Depending on where your network's Points Of Presence (PoPs) are, it can take 20 to 40 days to build out to an IBM site.
+You must have your Direct Link planned and built out before ordering a dedicated direct link to prevent delays. The Dedicated Direct Link physical demarcation is a patch panel port. It is up to the client to build to the patch panel port. If this is the first Direct Link order or is a new order into a new region, please allow yourself plenty of time. Depending on where your network's Points Of Presence (PoPs) are, it can take 20 to 40 days to build out to an IBM site.
 {: important}
 
 When all prerequisites are met, the Direct Link Dedicated provisioning process takes approximately 4 weeks to complete. The provisioning process is as follows:
@@ -1042,8 +1042,7 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: #reference-latency-bandwidth-satellite}
 
 *  Fully dependent on the client's underlying internet or Direct Link transport, and is impacted by any bandwidth limitations or latency they might introduce.
-* Connection is made to one of IBM's MZRs. Clients are encouraged to pick the MZR closet to them in terms of network performance.
-* Maximum latency requirements exist between the on-premises hosts for a satellite location. The maximum host-to-host communication at the satellite location is _x_ ms.
+* Connection is made to one of IBM's MZRs. Clients are encouraged to pick the MZR closest to them in terms of network performance.
 
 #### Provisioning
 {: #reference-provisioning-satellite}
@@ -1080,7 +1079,7 @@ Related links:
 {: #reference-resiliency-satellite}
 
 * Satellite Locations and Satellite Connectors both support High Availability (HA) deployments across multiple client availability zones.
-* The client premise deployment is the responsibility of the client to deploy across hosts that are logically and physically independent of give the greatest failure resiliency.
+* The client premise deployment is the responsibility of the client to deploy across hosts that are logically and physically independent to give the greatest failure resiliency.
 * For resiliency the {{site.data.keyword.cloud_notm}} infrastructure is deployed across three independent zones, each zone is a separate data center with independent power, cooling, and networking for maximum reliability.
 
 Related links:
