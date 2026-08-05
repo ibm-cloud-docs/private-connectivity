@@ -39,9 +39,9 @@ Private connectivity resources within {{site.data.keyword.cloud_notm}} can be ac
 ### Required skills for system administrators
 {: #required-skills}
 
-Creating network connectivity in {{site.data.keyword.cloud_notm}} is a critical task for network administrators. It allows you to connect your on-premises networks to the cloud, as well as connect different resources within the cloud itself. However, creating network connectivity can be a complex task, and it requires a number of different skills.
+Creating network connectivity in {{site.data.keyword.cloud_notm}} is a critical task for network administrators. It allows you to connect your on-premises networks to the cloud and connect different resources within the cloud itself. However, creating network connectivity can be a complex task, and it requires several different skills.
 
-Administrators who need to create network connectivity in {{site.data.keyword.cloud_notm}} should have a strong understanding of the following topics:
+Administrators who need to create network connectivity in {{site.data.keyword.cloud_notm}} must have a strong understanding of the following topics:
 
 * IP addressing and routing
 * Cloud networking concepts
@@ -64,7 +64,7 @@ Administrators should also be familiar with the following tools and technologies
 
 The {{site.data.keyword.cloud_notm}} Direct Link solution seamlessly connects your on-premises resources to your cloud resources, through a single-tenant, fiber-based, cross-connect terminated connection. This offering is also used by colocation facilities that are next to {{site.data.keyword.cloud_notm}} PoPs and data centers.
 
-* Private access to {{site.data.keyword.cloud_notm}} using dedicated infrastructure.
+* Private access to {{site.data.keyword.cloud_notm}} that uses dedicated infrastructure.
 * High cost for dedicated connectivity with increased bandwidth options.
 * Single-tenant solution for maximum throughput.
 * Optimal for large or frequent data transfers.
@@ -76,7 +76,7 @@ The {{site.data.keyword.cloud_notm}} Direct Link solution seamlessly connects yo
 
 Direct Link Connect uses a service provider to quickly establish and deliver connectivity to {{site.data.keyword.cloud_notm}} locations. These service providers are already connected to the {{site.data.keyword.cloud_notm}} network, and use multi-tenant, high capacity links (also known as network-to-network interfaces, or NNI).
 
-* Private access to {{site.data.keyword.cloud_notm}} using shared infrastructure.
+* Private access to {{site.data.keyword.cloud_notm}} that uses shared infrastructure.
 * Moderate cost, private and secure, shared infrastructure, and fast deployment.
 * Ideal for multicloud environments with your server provider’s network.
 * Virtual connectivity for rapid provisioning.
@@ -89,7 +89,7 @@ Direct Link Connect uses a service provider to quickly establish and deliver con
 Use {{site.data.keyword.cloud_notm}} Transit Gateway to interconnect {{site.data.keyword.cloud_notm}} resources and Virtual Private Cloud (VPC) infrastructures worldwide, keeping traffic within the {{site.data.keyword.cloud_notm}} network.
 
 * Deliver your applications around the world, with global routing across the {{site.data.keyword.cloud_notm}} network.
-* Simplify your network and build applications — without managing a distributed network.
+* Simplify your network and build applications, without managing a distributed network.
 * Scale and share {{site.data.keyword.cloud_notm}} services  like IBM classic infrastructure resources and IBM VPCs.
 * Keep traffic within the {{site.data.keyword.cloud_notm}} network without traversing the public internet.
 
@@ -104,7 +104,7 @@ You can use the {{site.data.keyword.cloud_notm}} VPN for VPC service to securely
 * Low-cost, [pay-as-you-go pricing](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external}
 * Configurable mechanism to detect the availability of an IPsec peer.
 * Internet Key Exchange (IKE) is a part of the IPsec protocol that is used to establish VPN connections.
-* Perfect Forward Secrecy (PFS) ensures that DH-generated keys aren't used again during IPsec renegotiation.
+* Perfect Forward Secrecy (PFS) helps ensure that DH-generated keys aren't used again during IPsec renegotiation.
 * Supports a pre-shared key for Phase 1 peer authentication. Supported authentication algorithms for both phases include SHA-256, SHA-384, and SHA-512.
 
 [Learn more](/docs/vpc?topic=vpc-using-vpn)
@@ -112,7 +112,7 @@ You can use the {{site.data.keyword.cloud_notm}} VPN for VPC service to securely
 #### VPN (client-to-site servers)
 {: #vpn-client-to-site}
 
-Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to the {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity.
+Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network by using an OpenVPN software client. This solution is useful for telecommuters who want to connect to the {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity.
 
 * Multi-factor client authentication.
 * Provides added layers of security with integrated authentication methods.
@@ -130,7 +130,7 @@ Client VPN for VPC provides client-to-site connectivity, which allows remote dev
 Satellite Connector provides a lightweight solution for {{site.data.keyword.cloud_notm}} services to reach out to on-premises data sources. If bidirectional communication is needed, or Cloud services to be deployed on the client on-premises, refer to a [Satellite Location](/docs/satellite?topic=satellite-location-host).
 
 * Provides client-owned L7 endpoints for {{site.data.keyword.cloud_notm}} services to access data on the client premise, rather than bridging on-premises networks with cloud like a VPN.
-* Allows you to use your AWS, Azure, Google Cloud infrastructure, your on-premises hardware, or purchase from IBM/IBM partners.
+* Allows you to use your AWS, Azure, Google Cloud infrastructure, your on-premises hardware, or purchase from IBM or IBM partners.
 * Uses internet or Direct Link for transport.
 * Operated as-a-service by IBM.
 * Use a single dashboard to centralize observability and management across all locations.
@@ -147,7 +147,7 @@ If bidirectional communication is needed or the ability to deploy {{site.data.ke
 #### Pricing
 {: #pricing-comparison}
 
-There are many factors to consider regarding pricing, such as peer configurations, dependent offerings, local providers. For example, a VPN site-to-site gateway or a VPN client-to-site server does not charge for an extra floating IP, and the pricing is also location-based.
+There are many factors to consider regarding pricing, such as peer configurations, dependent offerings, and local providers. For example, a VPN site-to-site gateway or a VPN client-to-site server does not charge for an extra floating IP, and the pricing is also location-based.
 
 To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
 {: important}
@@ -181,7 +181,7 @@ Bandwidth:
 
 * Direct Link Dedicated: Speeds up to 10 Gbps.
 * Direct Link Connect: Speeds up to 5 Gbps.
-* Transit Gateway: Speeds up to or in excess of 10 Gbps.
+* Transit Gateway: Speeds up to or more than 10 Gbps.
 * VPN (site-to-site): Stand-alone mode up to 600 Mbps; High availability up to 1200 Mbps.
 * VPN (client-to-site): Speeds up to 650 Mbps.
 * Satellite Connector: Limited by client connectivity; maximum speed less than 1000 Mbps.
@@ -189,7 +189,7 @@ Bandwidth:
 #### Provisioning time
 {: #provisioning-time}
 
-Provisioning time includes completing names and configuration parameters, as well as other dependencies and prerequisites.
+Provisioning time includes completing names and configuration parameters and other dependencies and prerequisites.
 
 * Direct Link Dedicated: 5-30 days
 * Direct Link Connect: 3-5 days, depending on your provider (Provisioning on the IBM side is the same day.)
@@ -206,7 +206,7 @@ All solutions that are listed are private and secure. For more information, see 
 #### Resiliency
 {: #resiliency-comparison}
 
-Solutions are diverse. To establish true redundancy, you must implement multiple connections to ensure that your solution meets your resiliency needs.
+Solutions are diverse. To establish true redundancy, you must implement multiple connections to help ensure that your solution meets your resiliency needs.
 
 #### Monitoring and logging
 {: #monitoring-logging-comparison}
@@ -220,18 +220,18 @@ Private connectivity options use various tools for monitoring and logging.
 | Transit Gateway   | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui) | [Activity Tracker](/docs/transit-gateway?topic=transit-gateway-at_events&interface=ui) |
 | VPN (site-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs&interface=ui) |
 | VPN (client-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-client-vpn-log-analysis-c2s&interface=ui) |
-| Satellite Connector | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/satellite?topic=satellite-monitor) | [Activity Tracker](/docs/satellite?topic=satellite-at_events)  \n  \n [IBM Log Analysis](/docs/satellite?topic=satellite-health) |
+| Satellite Connector | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/satellite?topic=satellite-monitor) | [Activity Tracker](/docs/satellite?topic=satellite-at_events)  \n \n [IBM Log Analysis](/docs/satellite?topic=satellite-health) |
 {: caption="Monitoring and logging comparison" caption-side="bottom"}
 
 ## Deployment considerations
 {: #deployment-considerations}
 
-When planning your network architecture, it's important to consider the deployment factors to ensure optimal performance, reliability, and cost-effectiveness.
+When you plan your network architecture, it's important to consider the deployment factors to help ensure optimal performance, reliability, and cost-effectiveness.
 
 ### Direct Link Dedicated deployment considerations
 {: #direct-link-dedicated-deployment-considerations}
 
-Here are some deployment considerations to review when choosing Direct Link Dedicated.
+Here are some deployment considerations to review when you choose Direct Link Dedicated.
 
 | Deployment consideration | Action |
 |:----|:--------|
@@ -246,7 +246,7 @@ Here are some deployment considerations to review when choosing Direct Link Dedi
 ### Direct Link Connect deployment considerations
 {: #direct-link-connect-deployment-considerations}
 
-Here are some deployment considerations to review when choosing Direct Link Connect.
+Here are some deployment considerations to review when you choose Direct Link Connect.
 
 | Deployment consideration | Action |
 |:----|:--------|
@@ -256,23 +256,23 @@ Here are some deployment considerations to review when choosing Direct Link Conn
 | Consider whether you want a metered or unmetered pricing plan. Metered has a lower port fee and charges a per GB usage fee for egress traffic across the direct link. Unmetered billing has a higher port fee and no usage charges, which is ideal for customers who have higher egress traffic across their direct link. | |
 | Review Direct Link Connect [planning considerations](/docs/dl?topic=dl-how-to-order-ibm-cloud-dl-connect&interface=ui#before-you-begin-connect) and [planning for virtual connections](/docs/dl?topic=dl-dl-planning-considerations#dl-planning-virtual-connections). |
 | Review Direct Link Connect [known limitations](/docs/dl?topic=dl-known-limitations). |   |
-| Decide whether you want to activate the optional BGP settings. See the following links for details. \n * [MD5 authentication](/docs/dl?topic=dl-enable-disable-md5&interface=ui)  \n * [bidirectional Forwarding Detection (BFD)](/docs/dl?topic=dl-activate-deactivate-bfd&interface=ui)  \n * [Prepending an AS path to influence route priority](/docs/dl?topic=dl-prepend-as-paths&interface=ui)  \n * [Route filtering](/docs/dl?topic=dl-filter-routes) | |
+| Decide whether you want to activate the optional BGP settings. See the following links for details. \n * [MD5 authentication \n](/docs/dl?topic=dl-enable-disable-md5&interface=ui) * [bidirectional Forwarding Detection (BFD) \n](/docs/dl?topic=dl-activate-deactivate-bfd&interface=ui) * [Prepending an AS path to influence route priority \n](/docs/dl?topic=dl-prepend-as-paths&interface=ui) * [Route filtering](/docs/dl?topic=dl-filter-routes) | |
 | Decide what type of network connection that you want to bind to your direct link. For example, you can create a direct, private connection between your on-premises network and {{site.data.keyword.cloud_notm}}, or bind your direct link to transit gateways. Your on-premises network can then access {{site.data.keyword.cloud_notm}} resources that are connected through the transit gateways. [Learn more](/docs/transit-gateway?topic=transit-gateway-about)  | |
 {: caption="Part 1: Direct Link Connect deployment considerations" caption-side="bottom"}
 
 ### Transit Gateway deployment considerations
 {: #tgw-deployment-considerations}
 
-Here are some deployment considerations to review when choosing Transit Gateway.
+Here are some deployment considerations to review when you choose Transit Gateway.
 
 | Deployment consideration | Action |
 |:----|:--------|
 | Have you decided which Transit Gateway location to use? | |
 | Do you want to use local or global routing? Your choice depends on where the networks to be connected are located. [Learn more](/docs/transit-gateway?topic=transit-gateway-helpful-tips&interface=ui#routing-considerations)  | |
-| Have you addressed any overlapping routes in the connected networks? Overlapping routes are a common issue when configuring a transit gateway. If the routes from two or more connections overlap, traffic might not be routed as intended. [Learn more](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui#route-conflicts)| |
+| Have you addressed any overlapping routes in the connected networks? Overlapping routes are a common issue when you configure a transit gateway. If the routes from two or more connections overlap, traffic might not be routed as intended. [Learn more](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui#route-conflicts)| |
 | Are there routes that you don't want advertised over the transit gateway? Do you need to create [prefix filters](/docs/transit-gateway?topic=transit-gateway-adding-prefix-filters)? | |
 | Have you considered what connection type you plan to use? | |
-| For a GRE tunnel or unbound GRE tunnel, have you configured redundant tunnels for high availability? There's no out-of-the-box redundancy with either GRE connection type. You must configure two GREs in different zones advertising the same routes to get redundancy. [Learn more](/docs/transit-gateway?topic=transit-gateway-helpful-tips&interface=ui#gre-considerations) |
+| For a GRE tunnel or unbound GRE tunnel, have you configured redundant tunnels for high availability? There's no out-of-the-box redundancy with either GRE connection type. Configure two GREs in different zones advertising the same routes to get redundancy. [Learn more](/docs/transit-gateway?topic=transit-gateway-helpful-tips&interface=ui#gre-considerations) |
 {: caption="Part 1: Transit Gateway planning considerations" caption-side="bottom"}
 
 Related link: [Planning for {{site.data.keyword.cloud_notm}} Transit Gateway](/docs/transit-gateway?topic=transit-gateway-helpful-tips)
@@ -280,7 +280,7 @@ Related link: [Planning for {{site.data.keyword.cloud_notm}} Transit Gateway](/d
 ### Site-to-site VPN deployment considerations
 {: #s2s-vpn-deployment-considerations}
 
-Here are some deployment considerations to review when choosing a VPN for VPC.
+Here are some deployment considerations to review when you choose a VPN for VPC.
 
 | Deployment consideration | Action |
 |:----|:--------|
@@ -290,7 +290,7 @@ Here are some deployment considerations to review when choosing a VPN for VPC.
 |How are your virtual server instances distributed in the VPC? VPN gateway is created in the zone that is associated with the subnet that you select and can be used to connect to virtual servers in the same zone. For zone fault tolerance, you can deploy one VPN gateway per zone.| |
 |Do you need your on-premises network to access service endpoints through your site-to-site connectivity option?  \n Do you have resources in {{site.data.keyword.cloud_notm}} on Classic that you need to access through VPN or another connectivity option?|  |
 |Do you have a peer VPN gateway or router (or multiple gateways/routers) setup on-premises? If yes, what is the type or model of that gateway? If your peer gateway enforces Perfect Forward Secrecy (PFS), you need to set custom policies.|  |
-|What will be the CIDRs on-premises? Note that local (VPC) and peer (on-premises) subnets of a VPN gateway connection should not overlap or conflict.  \n The local (VPC) subnet is specified when you create the VPN Gateway. For more information, see working with [Working with subnets in VPC](/docs/vpc?topic=vpc-subnets-configure).| |
+|What will be the CIDRs on-premises? Local (VPC) and peer (on-premises) subnets of a VPN gateway connection should not overlap or conflict. \n The local (VPC) subnet is specified when you create the VPN Gateway. For more information, see working with [Working with subnets in VPC](/docs/vpc?topic=vpc-subnets-configure).| |
 |Is your VPN gateway on-premises behind a firewall doing Network Address Translation (NAT)?|  |
 |Do you need the VPC resources to access the internet through VPN? Do you want any IP range to be blocked? |  |
 {: caption="Part 1: Site-to-site VPN deployment considerations" caption-side="bottom"}
@@ -302,15 +302,15 @@ Here are some site-to-site connectivity deployment considerations and actions.
 
 | Deployment consideration | Action |
 |:----|:--------|
-|What is the desired throughput of the site-to-site connectivity option (that is, Direct Link or VPN)? Is there a peak hour, month, or season?  \n Site-to-site VPN supports up to [650 Mbps of throughput](/docs/vpc?topic=vpc-faqs-vpn). Direct Link supports a much higher bandwidth up to 5 Gbps or 10 Gbps depending on your configurations. | |
-|What is your expected cost for the connectivity option?  \n Site-to-site VPN uses a usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}. Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated] (/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.
+|What is the wanted throughput of the site-to-site connectivity option (that is, Direct Link or VPN)? Is there a peak hour, month, or season? \n Site-to-site VPN supports up to [650 Mbps of throughput](/docs/vpc?topic=vpc-faqs-vpn). Direct Link supports a higher bandwidth up to 5 Gbps or 10 Gbps depending on your configurations. | |
+|What is your expected cost for the connectivity option? \n Site-to-site VPN uses a usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}. Direct Link has multiple pricing plans, varies by provider, and has higher costs. See [Direct Link Dedicated] (/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.
 | |
 {: caption="Part 2. Site-to-site connectivity performance and other things" caption-side="bottom"}
 
 ### Client-to-site VPN deployment considerations
 {: #c2s-vpn-deployment-considerations}
 
-Here are some deployment considerations to review when choosing Client VPN for VPC.
+Here are some deployment considerations to review when you choose Client VPN for VPC.
 
 | Deployment consideration | Action |
 |:----|:--------|
@@ -330,17 +330,17 @@ Here are some client-to-site connectivity deployment considerations and actions.
 | Deployment consideration | Action |
 |:----|:--------|
 |If you need individual access to VPC (client-to-site connectivity) from remote, how many users can be connecting to VPC concurrently through VPN?|  |
-|What is your expected cost for the connectivity option?  \n  \n Client-to-site VPN uses usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.  \n  \n Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.|  |
+|What is your expected cost for the connectivity option? \n \nClient-to-site VPN uses usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.  \n \n Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.|  |
 {: caption="Part 2. Client-to-site performance and other things" caption-side="bottom"}
 
 ### Satellite Connector deployment considerations
 {: #satellite-deployment-considerations}
 
-Here are some deployment considerations to review when choosing a Satellite Connector.
+Here are some deployment considerations to review when you choose a Satellite Connector.
 
 | Deployment consideration | Action |
 |----|-----|
-| Do you need a lightweight, secure tunnel or gateway from {{site.data.keyword.cloud_notm}} back to your on-premises environment? If this describes your use case, see [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors). | |
+| Do you need a lightweight, secure tunnel or gateway from {{site.data.keyword.cloud_notm}} back to your on-premises environment? If this describes your use case, see the [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors). | |
 | Still, not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-connector-and-secure-gateway#capability-comparison). | |
 | Do you need to initiate communications from your on-premises to {{site.data.keyword.cloud_notm}}? In this case, a Satellite Location is required instead of a Satellite Connector. | |
 | Do you need to route networks between your on-premises and {{site.data.keyword.cloud_notm}}? If so, consider a VPN or Direct Link connection. | |
@@ -357,7 +357,7 @@ Explore typical scenarios where the connectivity method is most effective.
 
 Primary use cases include transactional or batch data exchange across business-critical application workloads with high-volume and low-latency real-time access to software services and components across different clouds.
 
-* Well suited for continuous high volume real-time data transfers between applications,  e.g., system data replication
+* Well-suited for continuous high volume real-time data transfers between applications,  for example, system data replication
 * Direct physical connection provides a robust, reliable, and fast communication to support multiple protocols and complex workload connectivity requirements.
 
 For Direct Link Dedicated use cases, see [Customer on-premises facility to {{site.data.keyword.cloud_notm}}](/docs/dl?topic=dl-dl-about#use-cases-dedicated) and [Customer colocation to {{site.data.keyword.cloud_notm}}](/docs/dl?topic=dl-dl-about#use-case-dedicated-2).
@@ -370,7 +370,7 @@ For a Power Edge Router (PER) use case for IBM Power System Virtual Server, see 
 * Primary use cases include transactional data exchange across business-critical application workloads with moderate to high volume and low latency requirements.
 * Other use cases include on-demand or scheduled, real-time, near-real-time high volume batch data transfers between applications, such as for analytical processing, archiving, or replication.
 * Application data exchange is done via RESTful APIs or TCP host/ports for synchronous/real-time calls between systems and components.
-* Data transfers usually is done using sophisticated data migration and data replication applications.
+* Data transfers usually is done by using sophisticated data migration and data replication applications.
 
 #### Connecting to VPC by using Direct Link Connect
 {: #connecting-to-vpc-using-connect}
@@ -404,7 +404,7 @@ Key features are as follows:
    - Access and connectivity between two different {{site.data.keyword.powerSys_notm}} locations in the same region (for example DAL12 to DAL13) to support HA through replication.
    - Access and connectivity between two different {{site.data.keyword.powerSys_notm}} locations in different regions (for example DAL12 to WDC06) to support DR through replication.
 
-With local routing you can only connect PERs in the same region as the Transit Gateway, while PERs in a different region require global routing.
+With local routing you can connect PERs only in the same region as the Transit Gateway, while PERs in a different region require global routing.
 {: note}
 
 Complete the following steps to implement this scenario:
@@ -424,9 +424,9 @@ Primary use cases include administrative remote access to various hosts across t
 
 * Direct administrative access to hosts on the cloud is accomplished with jump servers, SSH, remote desktop protocol, and so on.
 * Application data exchange is accomplished through RESTful APIs or TCP host/ports for synchronous/real-time calls between systems and components.
-* Data transfer is accomplished using SFTP or simple data migration applications.
+* Data transfer is accomplished by using SFTP or simple data migration applications.
 
-#### Site-to-Site VPN for secure connectivity using a policy-based VPN
+#### Site-to-Site VPN for secure connectivity by using a policy-based VPN
 {: #use-case-vpn-1}
 
 Traffic that matches negotiated CIDR ranges passes through a policy-based VPN. You can use policy-based VPN gateways and ingress routing to forward POWER incoming traffic from transit gateways to your on-premises network. VPC 1 adds an on-premises CIDR as the VPC address prefix to allow route propagation.
@@ -440,17 +440,17 @@ Related link: [VPN for VPC use cases](/docs/vpc?topic=vpc-using-vpn#vpn-use-case
 
 Primary use cases include ad hoc or on-demand connectivity for low volume administrative remote access from a client host to hosts on a VPC network. Other use cases include ad hoc or on-demand low volume batch data transfers from a client host to hosts on a VPC network. These connections are tolerant to higher latency.
 
-* Direct administrative access to hosts on the cloud is accomplished using jump servers, SSH, remote desktop protocol, and so on.
+* Direct administrative access to hosts on the cloud is accomplished by using jump servers, SSH, remote desktop protocol, and so on.
 * Data transfer is accomplished using SFTP or simple data migration applications.
 
 #### Client-to-site VPN for secure connectivity
 {: #use-case-c2s-1}
 
-With Client VPN for VPC (client-to-site VPN) you can securely connect from remote devices to the {{site.data.keyword.cloud_notm}} network using an OpenVPN client.
+With Client VPN for VPC (client-to-site VPN) you can securely connect from remote devices to the {{site.data.keyword.cloud_notm}} network by using an OpenVPN client.
 
 To access the resources in `VPC1`, in your routing table set **Accept routes from** to **VPN server** to allow route propagation by the VPN server.
 
-To access resources in the `POWER VM`, in your routing table, create a VPN server route with the POWER network as the destination using the **Translate** action. This translates the source IP to the VPN server's private IP, making your VPN client IP invisible to the destination in the POWER network.
+To access resources in the `POWER VM`, in your routing table, create a VPN server route with the POWER network as the destination by using the **Translate** action. This converts the source IP to the VPN server's private IP, making your VPN client IP invisible to the destination in the POWER network.
 
 ![Client-to-site VPN use case](/images/vpn-client-to-site.png "Client-to-site VPN use case"){: caption="Client-to-site VPN use case" caption-side="bottom"}
 
@@ -461,7 +461,7 @@ Related link: [VPN server use cases](/docs/vpc?topic=vpc-vpn-client-to-site-over
 
 * A Satellite Connector is a lightweight resource that provides secure TLS tunneling from {{site.data.keyword.cloud_notm}} applications and services to your on-premises resources.
 
-* A Satellite Location expands on a Satellite Connector's capabilities by adding the ability for cloud services to be delivered on-premises, such as a managed Red Hat OpenShift on-premises or managed database on-premises. It also allows for communications originating from on-premises to resources inside of {{site.data.keyword.cloud_notm}}.
+* A Satellite Location expands on a Satellite Connector's capabilities by adding the ability for cloud services to be delivered on-premises, such as a managed Red Hat OpenShift on-premises or managed database on-premises. It also allows for communications originating from on-premises to resources inside {{site.data.keyword.cloud_notm}}.
 
 Related link: [Satellite Connector use cases](/docs/satellite?topic=satellite-use-case)
 
@@ -475,11 +475,11 @@ Use the walk-throughs to understand the provisioning process for the connectivit
 
 Direct Link Dedicated requires that you install an edge router (CER) to physically connect to the IBM cross-connect router (XCR) in the meet me room (MMR) at the {{site.data.keyword.cloud_notm}} location. The setup is initiated by requesting an LOA/CFA from IBM to proceed.
 
-You are issued a letter of authorization (LOA) that allows you and your service provider to work with the {{site.data.keyword.cloud_notm}} site manager to install the CER. The site manager then provides a completion notice indicating that the install happened. This completion notice is approved by the IBM Implementation team for accuracy. After which, the team will ensure IBM side Layer-1 connectivity.
+You are issued a letter of authorization (LOA) that allows you and your service provider to work with the {{site.data.keyword.cloud_notm}} site manager to install the CER. The site manager then provides a completion notice indicating that the installation happened. This completion notice is approved by the IBM Implementation team for accuracy. After which, the team will help ensure IBM side Layer-1 connectivity.
 
 After there is complete Layer-1 connectivity (customer and IBM side), and the direct link is configured on the XCR and cross-connect switch (XCS), the provisioning process is complete. The direct link is now able to establish the border gateway protocol (BGP) session between the CER and XCR.
 
-You must have your Direct Link planned and built out before ordering a dedicated direct link to prevent delays. The Dedicated Direct Link physical demarcation is a patch panel port. It is up to the client to build to the patch panel port. If this is the first Direct Link order or is a new order into a new region, please allow yourself plenty of time. Depending on where your network's Points Of Presence (PoPs) are, it can take 20 to 40 days to build out to an IBM site.
+You must have your Direct Link planned and built out before ordering a dedicated direct link to prevent delays. The Dedicated Direct Link physical demarcation is a patch panel port. It is up to the client to build to the patch panel port. If this is the first Direct Link order or is a new order into a new region, allow yourself plenty of time. Depending on where your network's Points Of Presence (PoPs) are, it can take 20 to 40 days to build out to an IBM site.
 {: important}
 
 When all prerequisites are met, the Direct Link Dedicated provisioning process takes approximately 4 weeks to complete. The provisioning process is as follows:
@@ -491,10 +491,10 @@ When all prerequisites are met, the Direct Link Dedicated provisioning process t
    If the LOA is incorrect, or you have any questions, open a case with IBM Support case, upload your concerns or questions to the case.
    {: note}
 
-1. [Depends on-site provider]{: tag-blue} - Give the approved LOA to your service provider. Work with your service provider to set up the cross-connect within your chosen {{site.data.keyword.cloud_notm}} location.
-1. [Depends on customer]{: tag-blue} - Upload the completion notice received from your service provider on the {{site.data.keyword.cloud_notm}} console. Ensure that your physical connection is patched down between the device and patch page. Also, check to make sure you're sending light to IBM. For more information, see [How do I troubleshoot a Direct Link Dedicated connection during activation?](/docs/dl?topic=dl-troubleshoot-level-1) and this [completion notice example](/docs/dl?topic=dl-completion-notice-example).
+1. [Depends onsite provider]{: tag-blue} - Give the approved LOA to your service provider. Work with your service provider to set up the cross-connect within your chosen {{site.data.keyword.cloud_notm}} location.
+1. [Depends on customer]{: tag-blue} - Upload the completion notice that is received from your service provider on the {{site.data.keyword.cloud_notm}} console. Ensure that your physical connection is patched down between the device and the patch page. Also, check to make sure you're sending light to IBM. For more information, see [How do I troubleshoot a Direct Link Dedicated connection during activation?](/docs/dl?topic=dl-troubleshoot-level-1) and this [completion notice example](/docs/dl?topic=dl-completion-notice-example).
 1. [1-2 days]{: tag-blue} - The IBM Implementation team reviews the completion notice to ensure that it aligns with the LOA. If the completion notice is rejected, you are notified through an existing case or via the Direct Link console.
-1. [1-4 days]{: tag-blue} - The IBM implementation team checks Layer-1 connectivity between the cross-connect router (XCR) and the Edge router and begins the patch cable installation process to established Layer-1 connectivity.
+1. [1-4 days]{: tag-blue} - The IBM implementation team checks Layer-1 connectivity between the cross-connect router (XCR) and the Edge router and begins the patch cable installation process to establish Layer-1 connectivity.
 1. [1-4 days]{: tag-blue} - After the cross-connect completion notice is accepted, the patch cable installation between the {{site.data.keyword.cloud_notm}} device to the patch page begins.
 
    Some DC sites cannot work on the patch cable installation process until they receive management approval.
@@ -509,7 +509,7 @@ Use a service provider to quickly establish and deliver connectivity to {{site.d
 
 This offering is ideal for multicloud environments with your service provider's network.
 
-Depending on your service provider, the Direct Link Connect provisioning process takes approximately 3 to 5 business days to complete. Provisioning on the IBM side is completed the same day. The provisioning process is as follows:
+Depending on your service provider, the Direct Link Connect provisioning process takes approximately 3 to 5 business days to complete. Provisioning on the IBM side is completed in the same day. The provisioning process is as follows:
 
 {{site.data.keyword.cloud_notm}} highly recommends that a second, diverse direct link be established to prevent outages, whether unplanned or planned due to maintenance.
 {: important}
@@ -534,7 +534,7 @@ Use {{site.data.keyword.cloud_notm}} Transit Gateway to interconnect {{site.data
 The provisioning process takes approximately 20-55 minutes to complete. The provisioning process is as follows:
 1. [5-10 mins]{: tag-blue} - Review [Planning for {{site.data.keyword.cloud_notm}} Transit Gateway](/docs/transit-gateway?topic=transit-gateway-helpful-tips) and plan the networks to be connected.
 1. [5-20 mins]{: tag-blue} - [Create a transit gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui).
-1. [5-20 mins]{: tag-blue} - [Add desired network connections](/docs/transit-gateway?topic=transit-gateway-adding-connections&interface=ui) to the transit gateway. These can be added while the gateway is still provisioning.
+1. [5-20 mins]{: tag-blue} - [Add the wanted network connections](/docs/transit-gateway?topic=transit-gateway-adding-connections&interface=ui) to the transit gateway. These can be added while the gateway is still provisioning.
 1. [5 mins]{: tag-blue} - Verify that you can ping between networks via the transit gateway.
 
 ### Site-to-site VPN provisioning walk-through
@@ -556,7 +556,7 @@ The provisioning process takes approximately 20 minutes to one hour to complete.
 ### Client-to-site VPN provisioning walk-through
 {: #provisioning-scenario-vpn-c2s}
 
-Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. This solution is useful for telecommuters who want to connect to the {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity.
+Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network that uses an OpenVPN software client. This solution is useful for telecommuters who want to connect to the {{site.data.keyword.cloud_notm}} from a remote location, such as a home office, while still maintaining secure connectivity.
 
 The provisioning process takes approximately 20 minutes to one hour to complete. The provisioning process is as follows:
 
@@ -570,7 +570,7 @@ The provisioning process takes approximately 20 minutes to one hour to complete.
    * For a high available VPN server, create a VPC and two subnets in two different zones.
    * For a stand-alone VPN server, create a VPC and one subnet in one zone.
    * Ensure your security groups and ACLs allow VPN traffic.
-   * When creating a new VPC, the default security group that is attached only allows ICMP and SSH communications. Ensure that you add an inbound rule for client-to-site VPN traffic in this security group.
+   * When you create a new VPC, the default security group that is attached allows only ICMP and SSH communications. Ensure that you add an inbound rule for client-to-site VPN traffic in this security group.
 1. [5 mins]{: tag-blue} - For server authentication only, [create IAM service-to-service authorization](/docs/vpc?topic=vpc-client-to-site-authentication#creating-iam-service-to-service).
 1. [5 mins]{: tag-blue} - [Create a VPN server](/docs/vpc?topic=vpc-vpn-create-server) and validate status.
 1. [5 mins]{: tag-blue} - [Create VPN routes](/docs/vpc?topic=vpc-vpn-client-to-site-routes).
@@ -695,7 +695,7 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: #reference-connectivity-connect}
 
 * Connect the VPC networks through intermediate partner networks
-* Partners have pre-established connectivity with cloud provider networks and provide an exchange for cross-connections and routing between the cloud networks.
+* Business Partners have pre-established connectivity with cloud provider networks and provide an exchange for cross-connections and routing between the cloud networks.
 * The connection is private, not encrypted, bypasses the internet, and is over a multi-tenant, shared network.
 
 #### Latency and bandwidth
@@ -709,9 +709,9 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: #reference-provisioning-connect}
 
 * Requires the provisioning of connectivity ports on the peer VPCs to connect the VPC to the partner network, as well as the provisioning of the cross-connect between the peer cloud ports on the partner network. Provisioning is done using self-service or semi-self-service processes available from {{site.data.keyword.cloud_notm}} and partner service providers.
-* The provisioning process typically takes 2-10 days and utilizes pre-established partnerships and contracts, but depends on offerings used from the cloud service provider and partner service provider.
+* The provisioning process typically takes 2-10 days and uses pre-established partnerships and contracts, but depends on offerings that are used from the cloud service provider and partner service provider.
 * Provides flexibility to make changes and adapt to changes in workload locations.
-* Must ensure the partner network supports cross-connecting the relevant cloud provider data center locations.
+* Must ensure that the partner network supports cross-connecting the relevant cloud provider data center locations.
 * {{site.data.keyword.cloud_notm}} Direct Link Connect has partnerships with over 45 global service providers.
 
 Related links:
@@ -729,14 +729,14 @@ Related links:
 * Workload data that is transmitted across the network connections is usually not encrypted by the providers and is the customer's responsibility.
 * Encryption is highly recommended and can be achieved at application level, for example with TLS encryption between the application client/severs.
 * Optionally, VPN can be set up on the connection to get a secure tunnel between endpoint subnetworks.
-* The offering configuration and control data is encrypted in-transit and at-rest at the database level. [Learn more](/docs/dl?topic=dl-mng-data#data-storage)
+* The offering configuration and control data are encrypted in-transit and at-rest at the database level. [Learn more](/docs/dl?topic=dl-mng-data#data-storage)
 
 #### Resiliency
 {: #reference-resiliency-connect}
 
-* Depends on the offerings. Typically requires a second connection to be configured using different availability zones and different cross connect routers (XCRs) to achieve HA.
-* Leverages SND by provisioning a virtual circuit across a bank of physical XCRs, which allows for failure of one physical device without connectivity failure. Additional connections can be provisioned to provide higher resiliency.
-* Optionally, for a low-cost redundant alternative, a VPN can be provisioned and used as fallback.
+* Depends on the offerings. Typically requires a second connection to be configured by using different availability zones and different cross-connect routers (XCRs) to achieve HA.
+* Uses SND by provisioning a virtual circuit across a bank of physical XCRs, which allows for failure of one physical device without connectivity failure. Additional connections can be provisioned to provide higher resiliency.
+* Optionally, for a low-cost redundant alternative, a VPN can be provisioned and used as a fallback.
 
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
@@ -759,7 +759,7 @@ You can use the Activity Tracker service to track how users and applications int
 ##### Direct Link Connect metrics monitoring
 {: #dlc-metrics}
 
-You can generate a report of all routes that are known to a direct link and its connections. This report allows you to verify the expected routes, view what virtual connections are contributing which routes to your direct link, and see next-hop address details of the routes received. If using the cross-account VPC linking feature, you can also see which prefixes or subnets are being routed through your cross-connect router. For more information, refer to [Generating a direct link route report](/docs/dl?topic=dl-generate-route-reports&interface=ui).
+You can generate a report of all routes that are known to have a direct link and its connections. This report allows you to verify the expected routes, view what virtual connections are contributing which routes to your direct link, and see next-hop address details of the routes received. If using the cross-account VPC linking feature, you can also see which prefixes or subnets are being routed through your cross-connect router. For more information, refer to [Generating a direct link route report](/docs/dl?topic=dl-generate-route-reports&interface=ui).
 
 ### Transit Gateway
 {: #reference-transit-gateway}
@@ -773,13 +773,13 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: tip}
 
 * Moderate cost
-* Costs are derived from the number of networks connected to the gateway, is the gateway that is enabled for local or global routing, volume of traffic through the gateway, and so on.
+* Costs are derived from the number of networks that are connected to the gateway, is the gateway that is enabled for local or global routing, volume of traffic through the gateway, and so on.
 
 #### Connectivity
 {: #reference-connectivity-transit-gateway}
 
 {{site.data.keyword.cloud_notm}} provides:
-* A private backbone for all connectivity between resources deployed in your VPC virtual networks with an AZ and between AZs (this backbone is separate from the public backbone for connectivity using public addressing). IP addresses on the private backbone are non-internet routable, or not announced toward the public backbone or the internet. The private backbone is owned, managed, and operated exclusively by {{site.data.keyword.cloud_notm}}.
+* A private backbone for all connectivity between resources that are deployed in your VPC virtual networks with an AZ and between AZs (this backbone is separate from the public backbone for connectivity using public addressing). IP addresses on the private backbone are non-internet routable, or not announced toward the public backbone or the internet. The private backbone is owned, managed, and operated exclusively by {{site.data.keyword.cloud_notm}}.
 * {{site.data.keyword.cloud_notm}} Transit Gateway uses this private backbone exclusively for connectivity between your virtual networks within a single region, across multiple regions, and to your {{site.data.keyword.cloud_notm}} classic workloads.
 
 Transit gateways connect:
@@ -787,14 +787,14 @@ Transit gateways connect:
    - VPCs in different regions (global routing)
    - VPCs to your {{site.data.keyword.cloud_notm}} classic infrastructure
    - Networks using a Generic Routing Encapsulation (GRE) tunnel
-   - On-premise networks using Direct Link to your {{site.data.keyword.cloud_notm}} networks
+   - On-premises networks that use Direct Link to your {{site.data.keyword.cloud_notm}} networks
 
 #### Latency and bandwidth
 {: #reference-latency-bandwidth-transit-gateway}
 
 * Reliable, high throughput, purely contained within the Cloud network.
 * Can traverse multiple regions if connecting networks in disparate locations.
-* Speeds up to or in excess of 10 Gbps.
+* Speeds up to or more than 10 Gbps.
 
 #### Provisioning
 {: #reference-provisioning-transit-gateway}
@@ -804,8 +804,8 @@ With {{site.data.keyword.cloud_notm}} Transit Gateway, you can connect:
 * VPCs in different regions (global routing)
 * VPCs to your {{site.data.keyword.cloud_notm}} classic infrastructure
 * Networks using a Generic Routing Encapsulation (GRE) tunnel
-* On-premise networks using Direct Link to your {{site.data.keyword.cloud_notm}} networks
-* Ordered and configured through {{site.data.keyword.cloud_notm}} UI, CLI or API.
+* On-premises networks using Direct Link to your {{site.data.keyword.cloud_notm}} networks
+* Ordered and configured through {{site.data.keyword.cloud_notm}} UI, CLI, or API.
 
 Related links:
 * [Locations](/docs/transit-gateway?topic=transit-gateway-tg-locations)
@@ -817,9 +817,9 @@ Related links:
 #### Security and data encryption
 {: #reference-security-data-encryption-transit-gateway}
 
-* Workload data transmitted across the network connections is not encrypted by the provider and is the customer's responsibility.
+* Workload data that is transmitted across the network connections is not encrypted by the provider and is the customer's responsibility.
 * Encryption is highly recommended and can be achieved at application level, for example with TLS encryption between the application client/severs.
-* The offering configuration and control data is encrypted in-transit and at-rest at the database level. [Learn more](/docs/transit-gateway?topic=transit-gateway-mng-data#data-storage)
+* The offering configuration and control data are encrypted in-transit and at-rest at the database level. [Learn more](/docs/transit-gateway?topic=transit-gateway-mng-data#data-storage)
 
 #### Resiliency
 {: #reference-resiliency-transit-gateway}
@@ -846,7 +846,7 @@ You can use the Activity Tracker service to track how users and applications int
 ##### Transit Gateway metrics monitoring
 {: #tgw-metrics}
 
-You can generate a report of all routes known to a gateway and its connections. This report allows you to verify the expected routes, view what connections are contributing which routes to your gateway, and see BGP information on routes received. This report contains routes from same account networks, and from networks connected using the cross-account connection capability. For more information, refer to [Generating a Transit Gateway route report](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui).
+You can generate a report of all routes that are known to a gateway and its connections. This report allows you to verify the expected routes, view what connections are contributing which routes to your gateway, and see that BGP information on routes received. This report contains routes from same account networks, and from networks connected using the cross-account connection capability. For more information, refer to [Generating a Transit Gateway route report](/docs/transit-gateway?topic=transit-gateway-route-reports&interface=ui).
 
 ### Site-to-site VPN
 {: #reference-site-to-site-vpn}
@@ -866,14 +866,14 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: #reference-connectivity-vpn-s2s}
 
 * Connect private networks with private connectivity over the internet.
-* The cloud provider's internet service provider (ISP) provides connection to the internet.
+* The cloud provider's internet service provider (ISP) provides a connection to the internet.
 * The connection is shared with internet users, is private and encrypted, and uses a secure tunnel.
 
 #### Latency and bandwidth
 {: #reference-latency-bandwidth-vpn-s2s}
 
 * Susceptible to the inherent variability in internet connectivity, latency, and bandwidth fluctuations.
-* Connection path might not be the shortest and might also traverse multiple hops, resulting in higher latencies.
+* The connection path might not be the shortest and might also traverse multiple hops, resulting in higher latencies.
 * Latency can be minimized if the data center location where the VPN host and server are provisioned are geographically close (in the same region).
 * Maximum limits usually apply to throughput capacity, depending on the cloud provider's VPN offering.
 * The {{site.data.keyword.cloud_notm}} offerings provide two options - stand-alone (up to 600 Mbps) and HA (up to 1200 Mbps).
@@ -881,9 +881,9 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 #### Provisioning
 {: #reference-provisioning-vpn-s2s}
 
-* Requires VPN gateways deployed on each peer VPC network. VPNs use network connectivity resources from cloud service provider's ISPs that connect the public clouds and VPCs to the internet.
-* Most cloud providers offer VPN-as-a-service: self-service provisioning of the VPN gateway and connections to establish secure private connection.
-* Provides flexibility to make changes by adding/removing connections quickly and by modifying subnets included in the tunnel.
+* Requires VPN gateways that are deployed on each peer VPC network. VPNs use network connectivity resources from cloud service provider's ISPs that connect the public clouds and VPCs to the internet.
+* Most cloud providers offer VPN-as-a-service: self-service provisioning of the VPN gateway and connections to establish a secure private connection.
+* Provides flexibility to make changes by adding/removing connections quickly and by modifying subnets that are included in the tunnel.
 
 Related links:
 * [Creating a VPN gateway](/docs/vpc?topic=vpc-vpn-create-gateway&interface=ui)
@@ -903,7 +903,7 @@ Related links:
 {: #reference-resiliency-vpn-s2s}
 
 * Depends on the VPN cloud offering. Typically, two VPN gateways are provisioned in the same availability zones and provide appliance-level redundancy/HA.
-* Appropriate selection of locations can help in planning for HA/DR.
+* An appropriate selection of locations can help in planning for HA/DR.
 * {{site.data.keyword.cloud_notm}} VPN gateway consists of two back-end instances in the same zone for high availability. Recommended to provision a gateway in each availability zone for zone fault tolerance.
 
 Related link: [VPN gateway high availability](/docs/vpc?topic=vpc-vpn-ha&interface=ui)
@@ -947,14 +947,14 @@ To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{
 {: #reference-connectivity-vpn-c2s}
 
 * It connects a client host to a VPC network with private connectivity over the internet.
-* The cloud provider's internet service provider (ISP) provides connection to the internet.
+* The cloud provider's internet service provider (ISP) provides a connection to the internet.
 * The connection is shared with internet users, is private and encrypted, and uses a secure tunnel.
 
 #### Latency and bandwidth
 {: #reference-latency-bandwidth-vpn-c2s}
 
 * Susceptible to the inherent variability in internet connectivity, latency, and bandwidth fluctuations.
-* Connection path may not be the shortest and may traverse multiple hops, resulting in higher latencies.
+* The connection path might not be the shortest and might traverse multiple hops, resulting in higher latencies.
 * Latency can be minimized if the data center location where the VPN gateways are provisioned are geographically close (in the same region).
 * Maximum limits usually apply to throughput capacity, depending on the cloud provider's VPN offering.
 * This {{site.data.keyword.cloud_notm}} offering provides speeds up to 650 Mbps.
