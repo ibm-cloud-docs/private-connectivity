@@ -4,7 +4,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-08-05"
+lastupdated: "2026-08-06"
 
 keywords: private connectivity options
 
@@ -101,7 +101,7 @@ Use {{site.data.keyword.cloud_notm}} Transit Gateway to interconnect {{site.data
 You can use the {{site.data.keyword.cloud_notm}} VPN for VPC service to securely connect your Virtual Private Cloud (VPC) to another private network. Use a static, route-based VPN, or a policy-based VPN to set up an IPsec site-to-site tunnel between your VPC and your on-premises private network or another VPC.
 
 * Protocol suite that provides secure communication between devices.
-* Low-cost, [pay-as-you-go pricing](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external}
+* Low-cost, [pay-as-you-go pricing](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external}
 * Configurable mechanism to detect the availability of an IPsec peer.
 * Internet Key Exchange (IKE) is a part of the IPsec protocol that is used to establish VPN connections.
 * Perfect Forward Secrecy (PFS) helps ensure that DH-generated keys aren't used again during IPsec renegotiation.
@@ -116,7 +116,7 @@ Client VPN for VPC provides client-to-site connectivity, which allows remote dev
 
 * Multi-factor client authentication.
 * Provides added layers of security with integrated authentication methods.
-* Low cost, [pay-as-you-go pricing](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external}.
+* Low cost, [pay-as-you-go pricing](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external}.
 * Availability in all MZRs' worldwide.
 * Supports both stand-alone (pilot) and high availability (production) deployments.
 * High availability spanning across zones, providing better performance and resiliency.
@@ -135,7 +135,7 @@ Satellite Connector provides a lightweight solution for {{site.data.keyword.clou
 * Operated as-a-service by IBM.
 * Use a single dashboard to centralize observability and management across all locations.
 * Extend access policies, logging, monitoring, and other controls to all locations.
-* Low cost, [pay-as-you-go pricing](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external} without bandwidth capacity limitations.
+* Low cost, [pay-as-you-go pricing](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external} without bandwidth capacity limitations.
 
 If bidirectional communication is needed or the ability to deploy {{site.data.keyword.cloud_notm}} services on your on-premises or other cloud infrastructures are required, a Satellite Location provides more capabilities. For more information, see [Understanding Satellite location and hosts](/docs/satellite?topic=satellite-location-host).
 
@@ -149,7 +149,7 @@ If bidirectional communication is needed or the ability to deploy {{site.data.ke
 
 There are many factors to consider regarding pricing, such as peer configurations, dependent offerings, and local providers. For example, a VPN site-to-site gateway or a VPN client-to-site server does not charge for an extra floating IP, and the pricing is also location-based.
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: important}
 
 | {{site.data.keyword.cloud_notm}} service | High cost | Medium cost | Low cost |
@@ -218,8 +218,8 @@ Private connectivity options use various tools for monitoring and logging.
 | Direct Link Dedicated | [Route reports](/docs/dl?topic=dl-generate-route-reports&interface=ui) | [Activity Tracker](/docs/dl?topic=dl-at_events&interface=ui) |
 | Direct Link Connect | [Route reports](/docs/dl?topic=dl-generate-route-reports&interface=ui) | [Activity Tracker](/docs/dl?topic=dl-at_events&interface=ui) |
 | Transit Gateway   | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui) | [Activity Tracker](/docs/transit-gateway?topic=transit-gateway-at_events&interface=ui) |
-| VPN (site-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs&interface=ui) |
-| VPN (client-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-client-vpn-log-analysis-c2s&interface=ui) |
+| VPN (site-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) |
+| VPN (client-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) |
 | Satellite Connector | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/satellite?topic=satellite-monitor) | [Activity Tracker](/docs/satellite?topic=satellite-at_events)  \n \n [IBM Log Analysis](/docs/satellite?topic=satellite-health) |
 {: caption="Monitoring and logging comparison" caption-side="bottom"}
 
@@ -303,7 +303,7 @@ Here are some site-to-site connectivity deployment considerations and actions.
 | Deployment consideration | Action |
 |:----|:--------|
 |What is the wanted throughput of the site-to-site connectivity option (that is, Direct Link or VPN)? Is there a peak hour, month, or season? \n Site-to-site VPN supports up to [650 Mbps of throughput](/docs/vpc?topic=vpc-faqs-vpn). Direct Link supports a higher bandwidth up to 5 Gbps or 10 Gbps depending on your configurations. | |
-|What is your expected cost for the connectivity option? \n Site-to-site VPN uses a usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}. Direct Link has multiple pricing plans, varies by provider, and has higher costs. See [Direct Link Dedicated] (/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.
+|What is your expected cost for the connectivity option? \n Site-to-site VPN uses a usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}. Direct Link has multiple pricing plans, varies by provider, and has higher costs. See [Direct Link Dedicated](#reference-direct-link-dedicated) and [Direct Link Connect](#reference-direct-link-connect) for more information.
 | |
 {: caption="Part 2. Site-to-site connectivity performance and other things" caption-side="bottom"}
 
@@ -330,7 +330,7 @@ Here are some client-to-site connectivity deployment considerations and actions.
 | Deployment consideration | Action |
 |:----|:--------|
 |If you need individual access to VPC (client-to-site connectivity) from remote, how many users can be connecting to VPC concurrently through VPN?|  |
-|What is your expected cost for the connectivity option? \n \nClient-to-site VPN uses usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.  \n \n Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-dedicated) and [Direct Link Connect](/docs/private-connectivity?topic=private-connectivity-reference-direct-link-connect) for more information.|  |
+|What is your expected cost for the connectivity option? \n \nClient-to-site VPN uses usage-based pricing that can be estimated by using the [Cost Estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.  \n \n Direct Link has multiple pricing plans, varies by provider, and has higher cost. See [Direct Link Dedicated](#reference-direct-link-dedicated) and [Direct Link Connect](#reference-direct-link-connect) for more information.|  |
 {: caption="Part 2. Client-to-site performance and other things" caption-side="bottom"}
 
 ### Satellite Connector deployment considerations
@@ -341,7 +341,7 @@ Here are some deployment considerations to review when you choose a Satellite Co
 | Deployment consideration | Action |
 |----|-----|
 | Do you need a lightweight, secure tunnel or gateway from {{site.data.keyword.cloud_notm}} back to your on-premises environment? If this describes your use case, see the [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors). | |
-| Still, not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-connector-and-secure-gateway#capability-comparison). | |
+| Still, not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-understand-connectors#connector-vs-gateway). | |
 | Do you need to initiate communications from your on-premises to {{site.data.keyword.cloud_notm}}? In this case, a Satellite Location is required instead of a Satellite Connector. | |
 | Do you need to route networks between your on-premises and {{site.data.keyword.cloud_notm}}? If so, consider a VPN or Direct Link connection. | |
 | Do you also need to run {{site.data.keyword.cloud_notm}} services like Red Hat OpenShift on your own infrastructure, another cloud provider infrastructure, or on the edge? If this describes your use case, see [Understanding Satellite locations and hosts](/docs/satellite?topic=satellite-location-host). | |
@@ -545,7 +545,7 @@ You can use the {{site.data.keyword.cloud_notm}} VPN for VPC service to securely
 The provisioning process takes approximately 20 minutes to one hour to complete. The provisioning process is as follows:
 
 1. [10 mins]{: tag-blue} - Review [planning considerations for VPN gateways](/docs/vpc?topic=vpc-planning-considerations-vpn&interface=ui) and plan for local/remote CIDRs. Also, review [VPN gateway limitations](/docs/vpc?topic=vpc-vpn-limitations) and [configuration information](/docs/vpc?topic=vpc-using-vpn&interface=ui), such as IKE policies, mode.
-1. [10 mins]{: tag-blue} - Create a VPN gateway using the [{{site.data.keyword.cloud_notm}} console](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console) or with the [CLI and API](/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli). Review [ACLs and security groups](/docs/vpc?topic=vpc-acls-security-groups-vpn).
+1. [10 mins]{: tag-blue} - Create a VPN gateway using the [{{site.data.keyword.cloud_notm}} console](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console) or with the [CLI and API](/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli). Review [ACLs and security groups](/docs/vpc?topic=vpc-using-acls-and-security-groups-vpn-services).
 1. [5-10 mins, depending on the gateway type]{: tag-blue} - Make sure that your peer device supports NAT traversal and that it is enabled on the peer device.
 1. [5 mins]{: tag-blue} - [Create a VPN gateway](/docs/vpc?topic=vpc-vpn-create-gateway).
 1. [5 mins]{: tag-blue} - [Create VPN connections](/docs/vpc?topic=vpc-vpn-adding-connections).
@@ -597,7 +597,7 @@ Provides additional information on the Direct Link Dedicated offering.
 #### Pricing
 {: #reference-pricing-dedicated}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
 * High cost
@@ -655,8 +655,8 @@ Related links:
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
 * [Models for diversity and redundancy](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link)
-* [High availability](/docs/dl?topic=dl-ha)
-* [Business continuity and disaster recovery](/docs/dl?topic=dl-bc-dr)
+* [High availability](/docs/dl?topic=dl-resiliency)
+* [Business continuity and disaster recovery](/docs/dl?topic=dl-understanding-ha)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-dedicated}
@@ -683,7 +683,7 @@ This topic provides additional information on the Direct Link Connect offering.
 #### Pricing
 {: #reference-pricing-connect}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
 * Moderate cost
@@ -741,8 +741,8 @@ Related links:
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
 * [Models for diversity and redundancy](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link)
-* [High availability](/docs/dl?topic=dl-ha)
-* [Business continuity and disaster recovery](/docs/dl?topic=dl-bc-dr)
+* [High availability](/docs/dl?topic=dl-resiliency)
+* [Business continuity and disaster recovery](/docs/dl?topic=dl-understanding-ha)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-connect}
@@ -769,7 +769,7 @@ This topic provides additional information on the Transit Gateway offering.
 #### Pricing
 {: #reference-pricing-transit-gateway}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
 * Moderate cost
@@ -830,8 +830,8 @@ You are responsible for understanding your configuration, customization, and usa
 
 Related links:
 
-* [High Availability](/docs/transit-gateway?topic=transit-gateway-ha)
-* [Business continuity and disaster recovery](/docs/transit-gateway?topic=transit-gateway-bc-dr)
+* [High Availability](/docs/transit-gateway?topic=transit-gateway-landing)
+* [Business continuity and disaster recovery](/docs/transit-gateway?topic=transit-gateway-landing)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-transit-gateway}
@@ -856,10 +856,10 @@ This topic provides additional information on the VPN for VPC offering.
 #### Pricing
 {: #reference-pricing-vpn-s2s}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
-* Low cost, [pay-as-you-go](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external} pricing
+* Low cost, [pay-as-you-go](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external} pricing
 * Costs are typically associated with the type of VPN gateway, usage hours, connection hours, and public IP addresses, volume of data egress from VPC through the gateway, and so on.
 
 #### Connectivity
@@ -918,7 +918,7 @@ VPN (site-to-site) gateways use a combination of IBM Log Analysis and {{site.dat
 
 You can use IBM Log Analysis to view application and connection logs from your {{site.data.keyword.cloud_notm}} VPN (site-to-site) for VPC. IBM Log Analysis offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs&interface=ui).
+For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs).
 
 ##### Site-to-site metrics monitoring
 {: #s2s-metrics}
@@ -937,10 +937,10 @@ This topic provides additional information on the Client VPN for VPC offering.
 #### Pricing
 {: #reference-pricing-vpn-c2s}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
-* Low cost, [pay-as-you-go](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external} pricing
+* Low cost, [pay-as-you-go](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external} pricing
 * Costs are typically associated with the type of VPN server, usage hours, aggregated connection hours, and public IP addresses, volume of data egress from the VPC, and so on.
 
 #### Connectivity
@@ -1002,7 +1002,7 @@ VPN (client-to-site) gateways use a combination of IBM Log Analysis and {{site.d
 
 You can use IBM Log Analysis to view application and connection logs from your {{site.data.keyword.cloud_notm}} VPN (client-to-site) for VPC. IBM Log Analysis offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs&interface=ui).
+For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs).
 
 ##### Client-to-site metrics monitoring
 {: #cts-metrics-monitoring}
@@ -1023,10 +1023,10 @@ Satellite Connector provides a lightweight solution for {{site.data.keyword.clou
 #### Pricing
 {: #reference-pricing-satellite}
 
-To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/cloud/cloud-calculator){: external}.
+To calculate pricing for {{site.data.keyword.cloud_notm}} offerings, use the [{{site.data.keyword.cloud_notm}} cost estimator](https://www.ibm.com/products/cloud/cloud-calculator){: external}.
 {: tip}
 
-* Low cost, [pay-as-you-go](https://www.ibm.com/cloud/pricing/pay-as-you-go){: external} pricing with a single flat rate charge without bandwidth caps.
+* Low cost, [pay-as-you-go](https://www.ibm.com/products/cloud/pricing/pay-as-you-go){: external} pricing with a single flat rate charge without bandwidth caps.
 * Flat rate per on-premises instance. Satellite locations and connections are priced at the same rate with no additional charges.
 * The client is responsible for on-premises compute/storage/network components and internet connection back to the {{site.data.keyword.cloud_notm}} MZR.
 
@@ -1084,7 +1084,7 @@ Related links:
 
 Related links:
 * [Architecture](/docs/satellite?topic=satellite-service-architecture)
-* [High availability](/docs/satellite?topic=satellite-ha)
+* [High availability](/docs/satellite?topic=satellite-ha-dr)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-satellite}
