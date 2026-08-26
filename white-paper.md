@@ -4,7 +4,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-08-06"
+lastupdated: "2026-08-26"
 
 keywords: private connectivity options
 
@@ -14,7 +14,7 @@ subcollection: private-connectivity
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.cloud_notm}} private connectivity offerings 
+# {{site.data.keyword.cloud_notm}} private connectivity offerings
 {: #white-paper}
 
 This white paper explores how to establish a private connection to {{site.data.keyword.cloud_notm}} by using various network topologies.
@@ -218,8 +218,8 @@ Private connectivity options use various tools for monitoring and logging.
 | Direct Link Dedicated | [Route reports](/docs/dl?topic=dl-generate-route-reports&interface=ui) | [Activity Tracker](/docs/dl?topic=dl-at_events&interface=ui) |
 | Direct Link Connect | [Route reports](/docs/dl?topic=dl-generate-route-reports&interface=ui) | [Activity Tracker](/docs/dl?topic=dl-at_events&interface=ui) |
 | Transit Gateway   | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui) | [Activity Tracker](/docs/transit-gateway?topic=transit-gateway-at_events&interface=ui) |
-| VPN (site-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) |
-| VPN (client-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs) |
+| VPN (site-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui) |
+| VPN (client-to-site) | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/vpc?topic=vpc-vpn-client-to-site-monitoring&interface=ui) | [IBM Log Analysis](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui) |
 | Satellite Connector | [{{site.data.keyword.cloud_notm}} Monitoring](/docs/satellite?topic=satellite-monitor) | [Activity Tracker](/docs/satellite?topic=satellite-at_events)  \n \n [IBM Log Analysis](/docs/satellite?topic=satellite-health) |
 {: caption="Monitoring and logging comparison" caption-side="bottom"}
 
@@ -341,7 +341,7 @@ Here are some deployment considerations to review when you choose a Satellite Co
 | Deployment consideration | Action |
 |----|-----|
 | Do you need a lightweight, secure tunnel or gateway from {{site.data.keyword.cloud_notm}} back to your on-premises environment? If this describes your use case, see the [Satellite Connector overview](/docs/satellite?topic=satellite-understand-connectors). | |
-| Still, not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-understand-connectors#connector-vs-gateway). | |
+| Still, not sure which solution fits your use case? See more detailed [Satellite Location use cases](/docs/satellite?topic=satellite-use-case) or the [Satellite Connector capability comparison with Secure Gateway](/docs/satellite?topic=satellite-understand-connectors). | |
 | Do you need to initiate communications from your on-premises to {{site.data.keyword.cloud_notm}}? In this case, a Satellite Location is required instead of a Satellite Connector. | |
 | Do you need to route networks between your on-premises and {{site.data.keyword.cloud_notm}}? If so, consider a VPN or Direct Link connection. | |
 | Do you also need to run {{site.data.keyword.cloud_notm}} services like Red Hat OpenShift on your own infrastructure, another cloud provider infrastructure, or on the edge? If this describes your use case, see [Understanding Satellite locations and hosts](/docs/satellite?topic=satellite-location-host). | |
@@ -545,7 +545,7 @@ You can use the {{site.data.keyword.cloud_notm}} VPN for VPC service to securely
 The provisioning process takes approximately 20 minutes to one hour to complete. The provisioning process is as follows:
 
 1. [10 mins]{: tag-blue} - Review [planning considerations for VPN gateways](/docs/vpc?topic=vpc-planning-considerations-vpn&interface=ui) and plan for local/remote CIDRs. Also, review [VPN gateway limitations](/docs/vpc?topic=vpc-vpn-limitations) and [configuration information](/docs/vpc?topic=vpc-using-vpn&interface=ui), such as IKE policies, mode.
-1. [10 mins]{: tag-blue} - Create a VPN gateway using the [{{site.data.keyword.cloud_notm}} console](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console) or with the [CLI and API](/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli). Review [ACLs and security groups](/docs/vpc?topic=vpc-using-acls-and-security-groups-vpn-services).
+1. [10 mins]{: tag-blue} - Create a VPN gateway using the [{{site.data.keyword.cloud_notm}} console](/docs/vpc?topic=vpc-creating-a-vpc-using-the-ibm-cloud-console) or with the [CLI and API](/docs/vpc?topic=vpc-creating-vpc-resources-with-cli-and-api&interface=cli). Review [ACLs and security groups](/docs/vpc?topic=vpc-vpn-client-to-site-security-groups).
 1. [5-10 mins, depending on the gateway type]{: tag-blue} - Make sure that your peer device supports NAT traversal and that it is enabled on the peer device.
 1. [5 mins]{: tag-blue} - [Create a VPN gateway](/docs/vpc?topic=vpc-vpn-create-gateway).
 1. [5 mins]{: tag-blue} - [Create VPN connections](/docs/vpc?topic=vpc-vpn-adding-connections).
@@ -655,8 +655,8 @@ Related links:
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
 * [Models for diversity and redundancy](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link)
-* [High availability](/docs/dl?topic=dl-resiliency)
-* [Business continuity and disaster recovery](/docs/dl?topic=dl-understanding-ha)
+* [High availability](/docs/dl?topic=dl-ha-dr-dl)
+* [Business continuity and disaster recovery](/docs/dl?topic=dl-ha-dr-dl)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-dedicated}
@@ -741,8 +741,8 @@ Related links:
 Related links:
 * [Achieving redundancy](/docs/dl?topic=dl-faqs#how-can-i-achieve-redundancy-with-ibm-cloud-dl)
 * [Models for diversity and redundancy](/docs/dl?topic=dl-models-for-diversity-and-redundancy-in-direct-link)
-* [High availability](/docs/dl?topic=dl-resiliency)
-* [Business continuity and disaster recovery](/docs/dl?topic=dl-understanding-ha)
+* [High availability](/docs/dl?topic=dl-ha-dr-dl)
+* [Business continuity and disaster recovery](/docs/dl?topic=dl-ha-dr-dl)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-connect}
@@ -830,8 +830,8 @@ You are responsible for understanding your configuration, customization, and usa
 
 Related links:
 
-* [High Availability](/docs/transit-gateway?topic=transit-gateway-landing)
-* [Business continuity and disaster recovery](/docs/transit-gateway?topic=transit-gateway-landing)
+* [High Availability](/docs/transit-gateway)
+* [Business continuity and disaster recovery](/docs/transit-gateway)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-transit-gateway}
@@ -918,7 +918,7 @@ VPN (site-to-site) gateways use a combination of IBM Log Analysis and {{site.dat
 
 You can use IBM Log Analysis to view application and connection logs from your {{site.data.keyword.cloud_notm}} VPN (site-to-site) for VPC. IBM Log Analysis offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs).
+For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui).
 
 ##### Site-to-site metrics monitoring
 {: #s2s-metrics}
@@ -1002,7 +1002,7 @@ VPN (client-to-site) gateways use a combination of IBM Log Analysis and {{site.d
 
 You can use IBM Log Analysis to view application and connection logs from your {{site.data.keyword.cloud_notm}} VPN (client-to-site) for VPC. IBM Log Analysis offers administrators, DevOps teams, and developers advanced features to filter, search, and tail log data, define alerts, and design custom views to monitor application and system logs.
 
-For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-using-log-analysis-to-view-vpn-logs).
+For more information, refer to [Using IBM Log Analysis to view VPN logs](/docs/vpc?topic=vpc-vpn-monitoring-metrics&interface=ui).
 
 ##### Client-to-site metrics monitoring
 {: #cts-metrics-monitoring}
@@ -1084,7 +1084,7 @@ Related links:
 
 Related links:
 * [Architecture](/docs/satellite?topic=satellite-service-architecture)
-* [High availability](/docs/satellite?topic=satellite-ha-dr)
+* [High availability](/docs/satellite?topic=satellite-sat-ha-dr)
 
 #### Monitoring and logging
 {: #reference-monitoring-logging-satellite}
@@ -1102,7 +1102,7 @@ You can use IBM Log Analysis to view application and connection logs for satelli
 ##### Satellite metrics monitoring
 {: #satellite-metrics}
 
-{{site.data.keyword.cloud_notm}} Satellite® comes with basic tools to help you manage the health of your Satellite resources, such as reviewing location and host health. Also, you can integrate Satellite and other {{site.data.keyword.cloud_notm}} resources with {{site.data.keyword.cloud_notm}} Monitoring to get a comprehensive view and tools to manage all your resources. 
+{{site.data.keyword.cloud_notm}} Satellite® comes with basic tools to help you manage the health of your Satellite resources, such as reviewing location and host health. Also, you can integrate Satellite and other {{site.data.keyword.cloud_notm}} resources with {{site.data.keyword.cloud_notm}} Monitoring to get a comprehensive view and tools to manage all your resources.
 
 Related links:
 * [Monitoring for Satellite](/docs/satellite?topic=satellite-monitor)
