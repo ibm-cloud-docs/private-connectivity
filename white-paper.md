@@ -4,7 +4,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-08-26"
+lastupdated: "2026-11-03"
 
 keywords: private connectivity options
 
@@ -415,7 +415,7 @@ Complete the following steps to implement this scenario:
 
 After the transit gateway connection is established, different {{site.data.keyword.cloud_notm}} networks are connected to each other.
 
-Related link: [Transit Gateway interconnectivity patterns](/docs/transit-gateway?topic=transit-gateway-about#patterns)
+Related link: [Transit Gateway interconnectivity patterns](/docs/transit-gateway?topic=transit-gateway-patterns)
 
 ### Site-to-site VPN use cases
 {: #use-cases-vpn-s2s}
